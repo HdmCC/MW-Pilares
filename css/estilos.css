@@ -1,0 +1,181 @@
+:root{
+	--blanco: rgb(255, 255, 255);
+	--oscuro: #212121;
+	--primario: #ffc107;
+	--secundario: #0097a7;
+	--gris: #757575;
+}
+html{
+	font-size: 62%;
+}
+body{
+	font-size: 16px;
+	font-family: 'Krub', sans-serif;
+	background-image: linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100%);
+}
+section{
+	justify-content: space-around;
+}
+.servicios{
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;*/
+}
+.titulo{
+	text-align: center;
+	font-size: 1.8rem;
+}
+.contenedor{
+	max-width: 120rem;
+	margin: 0 auto;
+}
+.navegacion-principal{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+@media (min-width: 768px){
+	.navegacion-principal{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+.nav-bg{
+	background-color: var(--secundario)
+}
+.navegacion-principal a{
+	text-decoration: none;
+	color: var(--blanco);
+	font-size: 2rem;
+	padding: 1rem;
+	font-weight: bold;
+}
+.navegacion-principal a:hover{
+	background-color: var(--primario);
+	color: var(--oscuro)
+}
+
+.denuncia{
+	background-image: url(../img/violencia.jpg);
+	height: 450px;
+	justify-content: initial;
+	margin-bottom: 2rem;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.top{
+	background-color: rgba(0, 0, 0, .7);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: var(--blanco);
+}
+.boton{
+	background-color: var(--secundario);
+	color: var(--blanco);
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 1rem 3rem;
+}
+.sombra{
+	-webkit-box-shadow: 15px 21px 22px -12px rgba(112,112,112,0.67);
+-moz-box-shadow: 15px 21px 22px -12px rgba(112,112,112,0.67);
+box-shadow: 15px 21px 22px -12px rgba(0,0,0,0.67);
+margin: 0 auto;
+max-width: 1200px;
+background-color: rgba(255, 255, 255, 1);
+border-radius: 10px;
+padding: 2rem;
+margin-bottom: 3rem;
+}
+.iconos{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	width: 150px;
+	height: 150px;
+	background-color: var(--primario);
+	border-radius: 50%;
+	justify-content: center;
+}
+.mayus{
+	text-transform: uppercase;
+	color: var(--secundario);
+}
+.formulario{
+	background-color: var(--gris);
+	border-radius: 10px;
+	padding: 2rem;
+}
+.formulario legend{
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--primario);
+}
+.contenedor-campos{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.campos{
+	margin-bottom: 1rem;
+	width: 100%;
+
+}
+.campos input[type="text"], 
+.campos input[type="tel"],
+.campos input[type="mail"]
+.campos textarea{
+	padding: .5rem;
+	border:none;
+	border-radius: .5rem;
+}
+footer{
+	display: flex;
+	justify-content: space-evenly;
+}
+.pegado{
+	float: right;
+}
+
+
+@media (min-width: 768px){
+	.servicios{
+		flex-direction: row;
+	}
+}
+.borde{
+	border: none;
+}
+.leyenda{
+	margin-bottom: 2rem;
+}
+
+	/*
+	.top{
+		background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 72%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--blanco);
+	}
+	.denuncia{
+		background-image: url(../img/violencia.jpg);
+    height: 450px;
+    justify-content: initial;
+    margin-bottom: -14rem;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+	}*/
